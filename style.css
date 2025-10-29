@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*main*/
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+#navbar h1 {
+    padding-bottom: 20px;
+    float:  left;
+    margin-left: 400px;
+    padding-top: 20px;
+}
+.bg-info {
+    background: lightyellow;
+}
+
+/*navbar*/
+#navbar {
+    background: lightyellow;
+    color: black;
+    overflow: auto;
+}
+
+
+#showcase {
+    background: url(media/Ragu.jpg) no-repeat center center/cover;
+    height: 500px;
+}
+
+#showcase .showcase-content {
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 100px;
+}
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+    padding-bottom: 30px;
+}
+#showcase .showcase-content p {
+    font-size: 30px;
+}
+
+#info {
+    height: 400px;
+}
+
+#info .info-content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+#info .info-content h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
