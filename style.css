@@ -8,6 +8,8 @@
 html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
+    scroll-behavior: smooth;
+    background-color: blanchedalmond;
 }
 #navbar h1 {
     padding-bottom: 20px;
@@ -16,7 +18,7 @@ html, body {
     padding-top: 20px;
 }
 .bg-info {
-    background: lightyellow;
+    background: blanchedalmond;
 }
 
 /*navbar*/
@@ -25,11 +27,36 @@ html, body {
     color: black;
     overflow: auto;
 }
+#navbar h1 {
+    text-decoration: none;
+}
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: #ff6600;
+    background: blanchedalmond;
+}
 
 
 #showcase {
     background: url(media/Ragu.jpg) no-repeat center center/cover;
     height: 500px;
+    border-radius: 30%;
 }
 
 #showcase .showcase-content {
@@ -46,20 +73,171 @@ html, body {
     font-size: 30px;
 }
 
-#info {
+#retsept {
     height: 400px;
 }
 
-#info .info-content{
+#retsept .info-content{
     float: left;
-    width: 50%;
+    width: 33%;
     height: 100%;
     text-align: center;
     padding: 40px 30px;
     overflow: hidden;
 }
+#retsept .retsept-img {
+    float: right;
+    border-radius: 30%;
+    width: 33%;
+    min-height: 100%;
+    object-fit: cover;
+    background: url(media/raguuu.avif);
 
-#info .info-content h2 {
-    padding-bottom: 20px;
-    font-size: 30px;
+}
+
+#retsept .valmistamine {
+    padding: 20px 30px;
+    text-align: center;
+    overflow: hidden;
+    width: 33%;
+    float: left;
+
+}
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#video h2 {
+    padding: 30px;
+}
+
+#kontakt {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+#kontakt a:hover {
+    color: #ff6600
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    background-color: blanchedalmond;
+    color: black;
+    padding: 13px 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background: beige;
+}
+/*footer*/
+footer {text-align: center;
+padding: 20px;
+background-color: lightyellow;
+}
+
+@media (max-width: 768px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #navbar h1 {
+        width: 100%;         
+        text-align: center;  
+        margin: 0;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;         
+        padding: 0;
+        margin: 0;
+        gap: 5px;            
+    }
+
+    #navbar ul li {
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #showcase {
+        height: 300px;
+        border-radius: 0;
+    }
+
+    #showcase .showcase-content h1 {
+        font-size: 28px;
+    }
+
+    #showcase .showcase-content p {
+        font-size: 16px;
+    }
+
+    #retsept {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+        padding: 20px 10px;
+    }
+
+    #retsept .info-content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #retsept .retsept-img {
+        display: none;
+    }
+
+    #video {
+        width: 90%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    #video h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #kontakt {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #kontakt a.btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
